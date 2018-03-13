@@ -36,23 +36,23 @@
 ### To run:
 a) Copy the whole **weather_email** project directory 
 
-b) Source python virtual environment: 
+b) Change outgoing email server configurations in ./main\_site/main\_site/settings.py ![email_setting](./email_config.png)
+	
+c) Source python virtual environment: 
 
 	$ source weather_email/venv/bin/activate
 		
-c) Run Django Server
+d) Run Django Server
 
 	$ python3 weather_email/main_site/manage.py runserver 
 	
-d) Open browser, open [http://127.0.0.1:8000/weather_app](http://127.0.0.1:8000/weather_app/) or [http://127.0.0.1:8000/weather_app/register](http://127.0.0.1:8000/weather_app/register)
+e) Open browser, open [http://127.0.0.1:8000/weather_app](http://127.0.0.1:8000/weather_app/) or [http://127.0.0.1:8000/weather_app/register](http://127.0.0.1:8000/weather_app/register)
 
-e) (Register some emails)
+f) (Register some emails)
 
-f) To send email, in command_line:
+g) To send email, in command_line:
 	
 	$ python3 weather_email/main_site/manage.py sendEmail  
-	
--
 
 ### Sample effect:
 * Good weather email:
