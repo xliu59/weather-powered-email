@@ -26,10 +26,10 @@
 	- Rich email content, including user-specific subject, body and image
 	
 ### Highlights:
-* Used custimized Django template and forms in creating frond-end pages
+* Used customized Django template and forms in creating frond-end pages
 * Parameterized development on Weather and Email modules, future change only need to modify parameters
 * Used cache for weather data and email content to optimize performance by avoiding making repeated API request
-* Used Django manangement command for the email-sending task, simple as 1-click
+* Used Django management command for the email-sending task, simple as 1-click
 * Used regular expression in weather string pattern detection
 
 
