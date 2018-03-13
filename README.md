@@ -1,12 +1,15 @@
 # Weather Powered Email
--
 
 #### A django web application 
 #### Author: Eric Liu
 [Klaviyo Design specification](https://www.klaviyo.com/weather-app)
 
 ### Tech Stack:
-* Language: Python 3.5.2* Framework: Django 2.0.1* DB: SQLite
+* Language: Python 3.5.2
+
+* Framework: Django 2.0.1
+
+* DB: SQLite
 
 ### Features:
 
@@ -50,8 +53,6 @@ f) (Register some emails)
 g) To send email, in command_line:
 	
 	$ python3 weather_email/main_site/manage.py sendEmail  
-	
--
 
 ### Sample effect:
 * Good weather email:
