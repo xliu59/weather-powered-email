@@ -1,0 +1,11 @@
+python manage.py loaddata result.json
+
+create table new_table as 
+select sub.id, sub.city_name, sub.state, sub.rank, sub.population,  abb.abbr
+from weather_app_city as sub
+join state_abbr as abb
+on sub.state = abb.state;
+
+CREATE TABLE "weather_app_city1" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "city_name" varchar(200) NOT NULL, "state" varchar(200) NOT NULL, "population" integer NOT NULL, "rank" integer NOT NULL, "state_abbr" varchar(20) NOT NULL);
+
+insert into weather_app_city1 select * from new_table;

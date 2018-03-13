@@ -1,0 +1,28 @@
+{% load static %}
+
+<link rel="stylesheet" href="{% static css_src %}">
+<div class="center form_window">
+    <h1 class="title">{{title}}</h1>
+    <hr class="hr">
+    <form action="{% url 'weather_app:register' %}" method="post">
+        {% csrf_token %}
+        {% for field in form %}
+            <div class="field_div">
+                <div class="field_label">
+                    {{ field.label_tag }}
+                    {% if field.errors %}
+                        {% for error in field.errors %}
+                            <span class="field_error">*{{ error|escape }}</span>
+                        {% endfor %}
+                    {% endif %}
+                </div>
+                <div class="field_input">
+                    {{ field }}
+                </div>
+            </div>
+        {% endfor %}
+        <input class="single_button" type="submit" value="Subscribe" />
+    </form>
+
+
+</div>
