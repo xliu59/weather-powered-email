@@ -4,6 +4,7 @@
 <head>
 
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 <title>README</title>
 
 
@@ -288,6 +289,21 @@ sup {
     vertical-align: super;
     line-height: 0;
 }
+
+kbd {
+  display: inline-block;
+  padding: 3px 5px;
+  font-size: 11px;
+  line-height: 10px;
+  color: #555;
+  vertical-align: middle;
+  background-color: #fcfcfc;
+  border: solid 1px #ccc;
+  border-bottom-color: #bbb;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #bbb
+}
+
 * {
 	-webkit-print-color-adjust: exact;
 }
@@ -369,19 +385,21 @@ sup {
 
 <p>a) Copy the whole <strong>weather_email</strong> project directory </p>
 
-<p>b) Source python virtual environment: </p>
+<p>b) Change outgoing email server configurations in ./main_site/main_site/settings.py <img src="./email_config.png" alt="email_setting"></p>
+
+<p>c) Source python virtual environment: </p>
 
 <div><pre><code class="language-none">$ source weather_email/venv/bin/activate</code></pre></div>
 
-<p>c) Run Django Server</p>
+<p>d) Run Django Server</p>
 
 <div><pre><code class="language-none">$ python3 weather_email/main_site/manage.py runserver </code></pre></div>
 
-<p>d) Open browser, open <a href="http://127.0.0.1:8000/weather_app/">http://127.0.0.1:8000/weather_app</a> or <a href="http://127.0.0.1:8000/weather_app/register">http://127.0.0.1:8000/weather_app/register</a></p>
+<p>e) Open browser, open <a href="http://127.0.0.1:8000/weather_app/">http://127.0.0.1:8000/weather_app</a> or <a href="http://127.0.0.1:8000/weather_app/register">http://127.0.0.1:8000/weather_app/register</a></p>
 
-<p>e) (Register some emails)</p>
+<p>f) (Register some emails)</p>
 
-<p>f) To send email, in command_line:</p>
+<p>g) To send email, in command_line:</p>
 
 <div><pre><code class="language-none">$ python3 weather_email/main_site/manage.py sendEmail  </code></pre></div>
 
